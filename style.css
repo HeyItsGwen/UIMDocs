@@ -44,9 +44,62 @@ header #navdiv img {
 }
 
 header #navdiv #navMenu #navButton {
-  color: grey;
+  color: dimgray;
   font-weight: 600;
   border-color: #00a7df;
   padding-bottom: 0.6em;
+}
+
+header #navdiv #navMenu #navButton:hover {
+  background-color: #00a7df;
+  color: #3b3b3b;
+}
+
+main .sectionBoth {
+  padding: 4vw;
+}
+
+main .sectionTitle {
+  margin-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+  color: grey;
+}
+
+main .subtitle::after {
+  content: '';
+  width: 30%;
+  border-bottom: 1px solid #00a7df;
+  display: block;
+  margin-top: 10px;
+}
+
+main #sectionRight article .articleTitle {
+  text-align: right;
+  display: inline-block;
+}
+
+main #sectionRight article .articleTitle::after {
+  content: '';
+  width: 30%;
+  border-bottom: 1px solid #00a7df;
+  display: inline-block;
+}
+
+main #sectionLeft article .articleTitle {
+  display: inline-block;
+}
+
+main #sectionLeft article .articleTitle::after {
+  content: '';
+  width: 30%;
+  border-bottom: 1px solid #00a7df;
+  display: block;
+  margin-top: 35px;
+}
+
+main #sectionLeft article .subtitle {
+  text-align: right;
 }
 /*# sourceMappingURL=style.css.map */

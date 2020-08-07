@@ -23,7 +23,6 @@ header {
   #navdiv {
 
     h1 {
-
       margin-left: 15px;
       top: 5px;
       font-weight: 600;
@@ -47,14 +46,84 @@ header {
       }
       
       #navButton {
-        color: grey;
+        color: rgb(105, 105, 105);
         font-weight: 600;
         border-color: $blue;
         padding-bottom: 0.6em;
+
+        &:hover {
+          background-color: $blue;
+          color: rgb(59, 59, 59);
+        }
       }
 
     }
     
+  }
+
+}
+
+main {
+
+  .sectionBoth {
+    padding: 4vw;
+  }
+
+  .sectionTitle {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 600;
+    color: grey;
+  }
+
+  .subtitle {
+
+    &::after {
+      @include after;
+      display: block;
+      margin-top: 10px;
+    }
+
+  }
+
+  #sectionRight {
+
+    article {
+      
+      .articleTitle {
+
+        text-align: right;
+        display: inline-block;
+        
+        &::after {
+          @include after;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  #sectionLeft {
+
+    article {
+      
+      .articleTitle {
+
+        display: inline-block;
+        
+        &::after {
+          @include after;
+          display: block;
+          margin-top: 35px;
+        }
+      }
+
+      .subtitle {
+        text-align: right;
+        
+      }
+    }
   }
 
 }
