@@ -13,12 +13,29 @@
 
 <body>
 
-  <header>
+  <header class='container-fluid d-flex align-items-center'>
     <!-- thin header with title and icon -->
-
     <!-- nav that moves/changes depending on responsiveness -->
     <!-- dropdown in the header that shows/hides different sections -->
-    <nav></nav>
+
+    <div  id='navdiv' class='row d-flex'>
+      <div class='col-md-9 col-xs-12 d-flex flex-md-row flex-column'>
+        <img class='icon align-self-center' src='images/uimhelm.png'>
+        <h1 class='align-self-center'>UIM Docs</h1>
+      </div>
+      <nav id='navMenu' class='col-md-3 col-xs-12 dropdown container-fluid d-flex align-items-center'>
+        <button id='navButton' class="btn btn-outline-primary dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Navigation
+        </button>
+        <div class='dropdown-menu col-md-12 col-12' aria-labelledby="dropdownMenuButton">
+          <a class='dropdown-item' href="#">Overview</a>
+          <a class='dropdown-item' href="#">option two</a>
+          <a class='dropdown-item' href="#">option three</a>
+          <a class='dropdown-item' href="#">option four</a>
+        </div>
+      </nav>
+    </div>
+
   </header>
 
   <main>
