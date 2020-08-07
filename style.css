@@ -57,6 +57,7 @@ header #navdiv #navMenu #navButton:hover {
 
 main .sectionBoth {
   padding: 4vw;
+  max-width: 1100px;
 }
 
 main .sectionTitle {
