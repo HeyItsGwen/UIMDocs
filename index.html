@@ -14,34 +14,196 @@
 <body>
 
   <header class='container-fluid d-flex align-items-center'>
-    <!-- thin header with title and icon -->
-    <!-- nav that moves/changes depending on responsiveness -->
-    <!-- dropdown in the header that shows/hides different sections -->
-
     <div  id='navdiv' class='row d-flex'>
       <div class='col-md-9 col-xs-12 d-flex flex-md-row flex-column'>
         <img class='icon align-self-center' src='images/uimhelm.png'>
         <h1 class='align-self-center'>UIM Docs</h1>
       </div>
-      <nav id='navMenu' class='col-md-3 col-xs-12 dropdown container-fluid d-flex align-items-center'>
+      <nav id='navMenu' class='col-md-3 col-xs-12 dropdown container-fluid d-flex align-items-center justify-content-center'>
         <button id='navButton' class="btn btn-outline-primary dropdown-toggle col-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Navigation
         </button>
-        <div class='dropdown-menu col-md-12 col-12' aria-labelledby="dropdownMenuButton">
+        <div id='dropdownMenu' class='text-center dropdown-menu col-md-12 col-12r' aria-labelledby="dropdownMenuButton">
           <a class='dropdown-item' href="#">Overview</a>
-          <a class='dropdown-item' href="#">option two</a>
-          <a class='dropdown-item' href="#">option three</a>
-          <a class='dropdown-item' href="#">option four</a>
+          <a class='dropdown-item' href="#">General Strategy</a>
+          <a class='dropdown-item' href="#">Stuff You Should Know</a>
+          <a class='dropdown-item' href="#">Skilling</a>
+          <a class='dropdown-item' href="#">Pvm</a>
         </div>
       </nav>
     </div>
 
   </header>
 
-  <main>
+  <main class='d-flex flex-column align-items-center'>
     <!-- section with many articles and in page link navigated with the nav -->
     <!-- dropdown that changes depending on what is picked in the nav dropdown -->
-    <article></article>
+    <section id='sectionRight' class='sectionBoth d-flex flex-column'>
+      <h2 class='align-self-md-end align-self-center sectionTitle'>RIGHT SECTION</h2>
+      <article class='d-flex flex-column container-fluid'>
+        <h3 class='align-self-end articleTitle'>This is an article title</h3>
+        <div class='row'>
+          <img class='col-sm-3 col-lg-2'>
+          <div class='col-sm-9 col-lg-10'>
+            <h4 class='subtitle'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+            <h4 class='subtitle'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+            <h4 class='subtitle'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+          </div>
+      </article>
+        </div>
+    </section>
+    <section id='sectionLeft' class='sectionBoth d-flex flex-column'>
+      <h2 class='sectionTitle'>LEFT SECTION</h2>
+      <article class='container-fluid'>
+        <h3 class='articleTitle align-self-start'>This is an article title</h3>
+        <div class='row'>
+          <div class='col-sm-9 col-lg-10'>
+            <h4 class='subtitle d-flex flex-column align-items-end'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+            <h4 class='subtitle d-flex flex-column align-items-end'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+            <h4 class='subtitle d-flex flex-column align-items-end'>A subtitle</h4>
+            <p>
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+              this is a bunch of article text.
+            </p>
+          </div>
+          <img class='col-sm-3 col-lg-2'>
+        </div>
+      </article>
+    </section>
   </main>
 
   <footer>
