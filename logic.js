@@ -13,7 +13,6 @@ let pvmVar = document.getElementById('pvm');
 
 let checkArray = [overviewVar, generalStrategyVar, stuffToKnowVar, skillingVar, pvmVar];
 
-//right
 overview = () => {
 
     for (i=0; i<checkArray.length; i++) {
@@ -28,7 +27,6 @@ overview = () => {
 
 }
 overviewLink.addEventListener('click', overview);
-//left
 generalStrategy = () => {
 
     for (i=0; i<checkArray.length; i++) {
@@ -46,12 +44,45 @@ generalStrategyLink.addEventListener('click', generalStrategy);
 
 stuffToKnow = () => {
 
+    for (i=0; i<checkArray.length; i++) {
+        if (!checkArray[i].classList.contains('d-none')) {
+            checkArray[i].classList.add('d-none');
+            checkArray[i].classList.remove('d-flex');
+        }
+    }
+
+    stuffToKnowVar.classList.remove('d-none');
+    stuffToKnowVar.classList.add('d-flex');
+
 }
+stuffToKnowLink.addEventListener('click', stuffToKnow);
 
 skilling = () => {
 
+    for (i=0; i<checkArray.length; i++) {
+        if (!checkArray[i].classList.contains('d-none')) {
+            checkArray[i].classList.add('d-none');
+            checkArray[i].classList.remove('d-flex');
+        }
+    }
+
+    skillingVar.classList.remove('d-none');
+    skillingVar.classList.add('d-flex');
+
 }
+skillingLink.addEventListener('click', skilling)
 
 pvm = () => {
 
+    for (i=0; i<checkArray.length; i++) {
+        if (!checkArray[i].classList.contains('d-none')) {
+            checkArray[i].classList.add('d-none');
+            checkArray[i].classList.remove('d-flex');
+        }
+    }
+
+    pvmVar.classList.remove('d-none');
+    pvmVar.classList.add('d-flex');
+
 }
+pvmLink.addEventListener('click', pvm);

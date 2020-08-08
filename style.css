@@ -19,20 +19,20 @@ header {
   }
 }
 
-header #navdiv h1 {
+header #navdiv a h1 {
   margin-left: 15px;
   top: 5px;
   font-weight: 600;
   color: grey;
 }
 
-header #navdiv img {
+header #navdiv a img {
   height: 70%;
   top: -5px;
 }
 
 @media only screen and (max-width: 768px) {
-  header #navdiv img {
+  header #navdiv a img {
     margin-top: 15px;
   }
 }
@@ -76,23 +76,23 @@ main .subtitle::after {
   margin-top: 10px;
 }
 
-main #sectionRight article .articleTitle {
+main .sectionRight article .articleTitle {
   text-align: right;
   display: inline-block;
 }
 
-main #sectionRight article .articleTitle::after {
+main .sectionRight article .articleTitle::after {
   content: '';
   width: 30%;
   border-bottom: 1px solid #00a7df;
   display: inline-block;
 }
 
-main #sectionLeft article .articleTitle {
+main .sectionLeft article .articleTitle {
   display: inline-block;
 }
 
-main #sectionLeft article .articleTitle::after {
+main .sectionLeft article .articleTitle::after {
   content: '';
   width: 30%;
   border-bottom: 1px solid #00a7df;
@@ -100,7 +100,7 @@ main #sectionLeft article .articleTitle::after {
   margin-top: 35px;
 }
 
-main #sectionLeft article .subtitle {
+main .sectionLeft article .subtitle {
   text-align: right;
 }
 /*# sourceMappingURL=style.css.map */
