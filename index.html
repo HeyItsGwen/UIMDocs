@@ -14,6 +14,7 @@
 <body>
 
   <header class='container-fluid d-flex align-items-center'>
+
     <div  id='navdiv' class='row d-flex'>
       <div class='col-md-9 col-xs-12 d-flex flex-md-row flex-column'>
         <img class='icon align-self-center' src='images/uimhelm.png'>
@@ -24,11 +25,11 @@
           Navigation
         </button>
         <div id='dropdownMenu' class='text-center dropdown-menu col-md-12 col-12r' aria-labelledby="dropdownMenuButton">
-          <a class='dropdown-item' href="#">Overview</a>
-          <a class='dropdown-item' href="#">General Strategy</a>
-          <a class='dropdown-item' href="#">Stuff You Should Know</a>
-          <a class='dropdown-item' href="#">Skilling</a>
-          <a class='dropdown-item' href="#">Pvm</a>
+            <a class='dropdown-item' id='overviewLink' href="#">Overview</a>
+            <a class='dropdown-item' id='generalStrategyLink' href="#">General Strategy</a>
+            <a class='dropdown-item' id='stuffToKnowLink' href="#">Stuff You Should Know</a>
+            <a class='dropdown-item' id='skillingLink' href="#">Skilling</a>
+            <a class='dropdown-item' id='pvmLink' href="#">Pvm</a>
         </div>
       </nav>
     </div>
@@ -38,7 +39,7 @@
   <main class='d-flex flex-column align-items-center'>
     <!-- section with many articles and in page link navigated with the nav -->
     <!-- dropdown that changes depending on what is picked in the nav dropdown -->
-    <section id='sectionRight' class='sectionBoth d-flex flex-column'>
+    <section id='overview' class='sectionBoth sectionRight flex-column d-flex'>
       <h2 class='align-self-md-end align-self-center sectionTitle'>RIGHT SECTION</h2>
       <article class='d-flex flex-column container-fluid'>
         <h3 class='align-self-end articleTitle'>This is an article title</h3>
@@ -121,7 +122,7 @@
       </article>
         </div>
     </section>
-    <section id='sectionLeft' class='sectionBoth d-flex flex-column'>
+    <section id='generalStrategy' class='sectionBoth sectionLeft flex-column d-none'>
       <h2 class='sectionTitle'>LEFT SECTION</h2>
       <article class='container-fluid'>
         <h3 class='articleTitle align-self-start'>This is an article title</h3>
@@ -208,12 +209,12 @@
 
   <footer>
     <!-- small footer with image credits and made with <3 thing -->
-  </foote>
+  </footer>
 
-  
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <script src='logic.js'></script>
 
 </body>
 
