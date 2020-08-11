@@ -1,17 +1,17 @@
 let overviewLink = document.getElementById('overviewLink');
 let generalStrategyLink = document.getElementById('generalStrategyLink');
-let stuffToKnowLink = document.getElementById('stuffToKnowLink');
+let deathLink = document.getElementById('deathLink');
 let skillingLink = document.getElementById('skillingLink');
 let pvmLink = document.getElementById('pvmLink');
 
 //varibale names for dom navigation of article sections
 let overviewVar = document.getElementById('overview');
 let generalStrategyVar = document.getElementById('generalStrategy');
-let stuffToKnowVar = document.getElementById('stuffToKnow');
+let deathVar = document.getElementById('death');
 let skillingVar = document.getElementById('skilling');
 let pvmVar = document.getElementById('pvm');
 
-let checkArray = [overviewVar, generalStrategyVar, stuffToKnowVar, skillingVar, pvmVar];
+let checkArray = [overviewVar, generalStrategyVar, deathVar, skillingVar, pvmVar];
 
 overview = () => {
 
@@ -42,7 +42,7 @@ generalStrategy = () => {
 }
 generalStrategyLink.addEventListener('click', generalStrategy);
 
-stuffToKnow = () => {
+death = () => {
 
     for (i=0; i<checkArray.length; i++) {
         if (!checkArray[i].classList.contains('d-none')) {
@@ -51,11 +51,11 @@ stuffToKnow = () => {
         }
     }
 
-    stuffToKnowVar.classList.remove('d-none');
-    stuffToKnowVar.classList.add('d-flex');
+    deathVar.classList.remove('d-none');
+    deathVar.classList.add('d-flex');
 
 }
-stuffToKnowLink.addEventListener('click', stuffToKnow);
+deathLink.addEventListener('click', death);
 
 skilling = () => {
 
