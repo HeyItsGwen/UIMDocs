@@ -2,16 +2,14 @@ let overviewLink = document.getElementById('overviewLink');
 let generalStrategyLink = document.getElementById('generalStrategyLink');
 let deathLink = document.getElementById('deathLink');
 let skillingLink = document.getElementById('skillingLink');
-let pvmLink = document.getElementById('pvmLink');
 
 //varibale names for dom navigation of article sections
 let overviewVar = document.getElementById('overview');
 let generalStrategyVar = document.getElementById('generalStrategy');
 let deathVar = document.getElementById('death');
 let skillingVar = document.getElementById('skilling');
-let pvmVar = document.getElementById('pvm');
 
-let checkArray = [overviewVar, generalStrategyVar, deathVar, skillingVar, pvmVar];
+let checkArray = [overviewVar, generalStrategyVar, deathVar, skillingVar];
 
 overview = () => {
 
@@ -71,18 +69,3 @@ skilling = () => {
 
 }
 skillingLink.addEventListener('click', skilling)
-
-pvm = () => {
-
-    for (i=0; i<checkArray.length; i++) {
-        if (!checkArray[i].classList.contains('d-none')) {
-            checkArray[i].classList.add('d-none');
-            checkArray[i].classList.remove('d-flex');
-        }
-    }
-
-    pvmVar.classList.remove('d-none');
-    pvmVar.classList.add('d-flex');
-
-}
-pvmLink.addEventListener('click', pvm);
