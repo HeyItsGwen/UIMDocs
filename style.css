@@ -56,6 +56,26 @@ header #navdiv #navMenu #navButton:hover {
   color: #3b3b3b;
 }
 
+main .overview {
+  background-image: url(images/overview.png);
+  background-position: right;
+}
+
+main .death {
+  background-image: url(images/death.png);
+  background-position: left;
+}
+
+main .strategy {
+  background-image: url(images/strategy.png);
+  background-position: right;
+}
+
+main .skilling {
+  background-image: url(images/skilling.png);
+  background-position: left;
+}
+
 main .sectionBoth {
   padding: 4vw;
   max-width: 1100px;
@@ -65,8 +85,9 @@ main .sectionBoth span {
   padding-left: 30px;
 }
 
-main .sectionBoth img {
+main .sectionBoth .img-section {
   max-height: 500px;
+  background-size: initial;
 }
 
 main .sectionTitle {
