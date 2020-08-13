@@ -27,8 +27,9 @@ header #navdiv a h1 {
 }
 
 header #navdiv a img {
-  height: 70%;
   top: -5px;
+  max-height: 45px;
+  max-width: 45px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -55,9 +56,38 @@ header #navdiv #navMenu #navButton:hover {
   color: #3b3b3b;
 }
 
+main .overview {
+  background-image: url(images/overview.png);
+  background-position: right;
+}
+
+main .death {
+  background-image: url(images/death.png);
+  background-position: left;
+}
+
+main .strategy {
+  background-image: url(images/strategy.png);
+  background-position: right;
+}
+
+main .skilling {
+  background-image: url(images/skilling.png);
+  background-position: left;
+}
+
 main .sectionBoth {
   padding: 4vw;
   max-width: 1100px;
+}
+
+main .sectionBoth span {
+  padding-left: 30px;
+}
+
+main .sectionBoth .img-section {
+  max-height: 500px;
+  background-size: initial;
 }
 
 main .sectionTitle {
@@ -68,12 +98,17 @@ main .sectionTitle {
   color: grey;
 }
 
+main .subtitle {
+  margin-top: 15px;
+}
+
 main .subtitle::after {
   content: '';
   width: 30%;
   border-bottom: 1px solid #00a7df;
   display: block;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 main .sectionRight article .articleTitle {
